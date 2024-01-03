@@ -14,13 +14,13 @@ bytecode_compilation_path="%2" \
 %{?!python3_pkgversion:%global python3_pkgversion 3}
 
 Name: koji
-Version: 1.32.0
-Release: 1%{?dist}
+Version: 1.33.1
+Release: 1
 # the included arch lib from yum's rpmUtils is GPLv2+
 License: LGPLv2 and GPLv2+
 Summary: Build system tools
 URL: https://pagure.io/koji/
-Source0: https://releases.pagure.org/koji/koji-%{version}.tar.bz2
+Source0: https://releases.pagure.org/koji/koji-%{version}.tar.gz
 
 
 BuildArch: noarch
@@ -104,5 +104,8 @@ done
 
 
 %changelog
+* Thu Dec 7 2023 lichaoran <pkwarcraft@hotmail.com> - 1.33.1-1
+- Upgrade to 1.33.1
+
 * Thu Mar 23 2023 lichaoran <pkwarcraft@hotmail.com> - 1.32.0-1
 - init package
